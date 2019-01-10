@@ -7,6 +7,11 @@
     <groupId>com.hhx</groupId>
     <artifactId>design-mode</artifactId>
     <version>1.0.0</version>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
     <build>
         <plugins>
             <plugin>
@@ -19,13 +24,4 @@
             </plugin>
         </plugins>
     </build>
-
-    <dependencies>
-        <dependency>
-            <groupId>com.hhx</groupId>
-            <artifactId>tools</artifactId>
-            <version>1.0.2</version>
-        </dependency>
-    </dependencies>
-
 </project>

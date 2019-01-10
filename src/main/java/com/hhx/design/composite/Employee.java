@@ -1,8 +1,5 @@
 package com.hhx.design.composite;
 
-import lombok.Data;
-import org.apache.commons.lang3.StringUtils;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,7 +8,7 @@ import java.util.List;
  *
  * @author hhx
  */
-@Data
+
 public class Employee {
     private String name;
     /**
@@ -28,6 +25,38 @@ public class Employee {
         this.name = name;
         this.salary = sal;
         subordinates = new ArrayList<>();
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Integer getDept() {
+        return dept;
+    }
+
+    public void setDept(Integer dept) {
+        this.dept = dept;
+    }
+
+    public int getSalary() {
+        return salary;
+    }
+
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
+    public List<Employee> getSubordinates() {
+        return subordinates;
+    }
+
+    public void setSubordinates(List<Employee> subordinates) {
+        this.subordinates = subordinates;
     }
 
     /**

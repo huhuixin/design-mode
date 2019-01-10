@@ -1,20 +1,31 @@
 package com.hhx.design.builder;
 
-import lombok.Data;
-import lombok.ToString;
-
 /**
  * 需要构建的对象
  *
  * @author hhx
  */
-@Data
-@ToString
 public class Target {
     private Integer paramA;
     private String paramB;
 
     private Target(){
+    }
+
+    public Integer getParamA() {
+        return paramA;
+    }
+
+    public void setParamA(Integer paramA) {
+        this.paramA = paramA;
+    }
+
+    public String getParamB() {
+        return paramB;
+    }
+
+    public void setParamB(String paramB) {
+        this.paramB = paramB;
     }
 
     private Target(Integer paramA, String paramB) {
