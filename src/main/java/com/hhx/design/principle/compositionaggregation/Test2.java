@@ -1,7 +1,7 @@
 package com.hhx.design.principle.compositionaggregation;
 
 /**
- * Created by geely
+ *
  */
 public class Test2 {
     public static void main(String[] args) {
